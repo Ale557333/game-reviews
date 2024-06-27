@@ -1,4 +1,4 @@
-export default function RootLayout({ children }) {
+const RootLayout = ({ children }) => {
   return (
     <html lang="pt-br">
       <body>
@@ -14,3 +14,4 @@ export default function RootLayout({ children }) {
   )
 }
 
+export default RootLayout
