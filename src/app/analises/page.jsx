@@ -4,8 +4,16 @@ const Reviews = () => {
     return (
         <div>
           <h1>Análises</h1>
-            <p>Análises aqui</p>
-            <Link href="/">Voltar para a página inicial</Link>
+            <nav>
+                <ul>
+                    <li>
+                        <Link href="/analises/sonic-frontiers">Sonic Frontiers</Link>
+                    </li>
+                    <li>
+                        <Link href="/analises/super-mario-bros-wonder">Super Mario Bross Wonder</Link>
+                    </li>
+                </ul>
+            </nav>
         </div>
     )
 }
