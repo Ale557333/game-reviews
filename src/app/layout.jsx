@@ -1,38 +1,19 @@
-import { Montserrat } from 'next/font/google'
-
-const montserrat =  Montserrat({
-  weights: [400, 700],
-  subsets: ['latin'],
-  display: 'swap'
-
-})
+import NavBar from './components/nav-bar'
+import './globals.css'
 
 const RootLayout = ({ children }) => {
   return (
-    <html lang="pt-br" className={`${montserrat.variable}`}>
-      <body>
+    <html lang="pt-BR">
+      <body className="bg-slate-800 text-slate-200 flex flex-col px-6 py-2 min-h-screen">
         <header>
-          <h2>Análises de Jogos</h2>
-          <nav>
-            <ul>
-              <li>
-                <a href="/">Início</a>
-              </li>
-              <li>
-                <a href="/sobre" prefetch={false}>Sobre</a>
-              </li>
-              <li>
-                <a href="/analises">Análises</a>
-              </li>
-            </ul>
-          </nav>
+          <NavBar />
         </header>
-        <main>
+        <main className="grow py-3">
           {children}
         </main>
-        <footer>
-          Informações e imagens dos jogos gentilmente cedidos por <a href="https://rawg.io/"
-          target="_blank">RAWG</a>
+        <footer className="border-t border-t-slate-600 py-3 text-center text-xs">
+          Informações e imagens dos jogos gentilmente cedidos por{' '}
+          <a href="https://rawg.io/" target="_blank" className="hover:text-sky-500">RAWG</a>
         </footer>
       </body>
     </html>
