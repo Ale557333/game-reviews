@@ -1,6 +1,7 @@
 import Link from 'next/link'
 
 const NavBar = () => {
+  return (
   <nav className="flex justify-between border-b border-b-slate-600 pb-4 pt-2">
     <h2>Análises de Jogos</h2>
       <ul className="flex gap-4">
@@ -15,7 +16,7 @@ const NavBar = () => {
         </li>
       </ul>
   </nav>
-
+  )
 }
 
 export default NavBar
