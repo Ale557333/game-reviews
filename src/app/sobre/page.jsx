@@ -1,9 +1,10 @@
 import Link from "next/link"
+import Heading1 from "../components/heading-1"
 
 const About = () => {
     return (
         <>
-          <h1>Sobre Análise de Jogos</h1>
+          <Heading1>Sobre Análise de Jogos</Heading1>
           <p>Descriçāo de jogos aqui</p>
           <Link href="/">Voltar para a página inicial</Link>
         </>

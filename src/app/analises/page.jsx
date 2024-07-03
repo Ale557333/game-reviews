@@ -1,9 +1,10 @@
 import Link from "next/link"
+import Heading1 from "../components/heading-1"
 
 const Reviews = () => {
     return (
         <div>
-          <h1>Análises</h1>
+          <Heading1>Análises</Heading1>
             <nav>
                 <ul>
                     <li>
